@@ -1,0 +1,612 @@
+ /* Este pedazo de codigo es importante,
+porque hace que el padding no se sume al 
+tamaño de los divs y forme parte de este */
+*, *:before, *:after { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** Header **/
+
+#hero-image-index{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/inicio.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom center;
+	height: 450px;
+	position:relative;
+}
+
+#hero-image-institucional{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/institucional.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top center;
+	height: 450px;
+	position:relative;
+}
+
+#hero-image-dejar-de-fumar{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/dejar_de_fumar.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top center;
+	height: 450px;
+	position:relative;
+}
+
+#hero-image-profesionales{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/profesionales.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top center;
+	height: 450px;
+	position:relative;
+}
+
+#hero-image-comunicacion{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/comunicacion.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top center;
+	height: 450px;
+	position:relative;
+}
+
+#hero-image-contactanos{
+	background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.6) 100%),url("../img/contactanos.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom center;
+	height: 450px;
+	position:relative;
+}
+
+nav{
+	position: absolute;
+	z-index: 3;
+}
+
+.logo-container{
+	padding-top: 5px !important;
+	padding-bottom: 0 !important;
+}
+
+.hero-img-txt{
+	position: absolute;
+	bottom: .5rem;
+	/*left:1rem;*/
+	padding: 0 1rem;
+}
+.hero-img-txt h1{
+	color: #FFFFFF;
+}
+
+.call-to-action{
+	z-index: 1;
+	height: 70px;
+	width: 70px;
+	background-image: url('../img/contactanos.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -35px;
+	right:1rem;
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+}
+
+.call-to-action:hover{
+	cursor: pointer;
+	-webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.87);
+}
+
+/** Nav Responsive **/
+
+ul.topnav {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.87);
+}
+
+ul.topnav, ul.topnav li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0091EA;
+  font-weight: 300;
+}
+
+ul.topnav li:nth-child(2) ul {float: right;}
+
+ul.topnav li:nth-child(2) ul li {display: inline;}
+
+ul.topnav li:first-child{
+  float: left;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: .8rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: .8rem;
+}
+
+ul.topnav li a:hover {background-color: #00B0FF;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:1024px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+  	ul.topnav.responsive {position: fixed;}
+
+  	ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  	}	
+	
+	/** Tamaño del icono de hamburguesita **/
+  	/** 
+	li.icon{font-size:.8rem;}
+
+	li.icon a{
+		padding-top: 16px !important;
+    	padding-bottom: 15px !important;
+	}
+  	**/
+
+	ul.topnav li:nth-child(2) ul {float: none;}
+
+	ul.topnav li:nth-child(2) ul li {display:inline;}
+
+	ul.topnav.responsive li {
+		float: none;
+    	display: inline;
+	}
+  
+	ul.topnav.responsive li a {
+    	display: block;
+    	text-align: left;
+	}
+
+}
+
+@media (min-width: 0rem) {
+	li.icon{font-size:.8rem;}
+
+	li.icon a{
+		padding-top: 16px !important;
+    	padding-bottom: 15px !important;
+	}
+}
+
+@media (min-width: 40rem) {
+	li.icon{font-size:.8rem;}
+
+	li.icon a{
+		padding-top: 15px !important;
+    	padding-bottom: 14px !important;
+	}
+}
+
+/** Textos de las hero-images **/
+@media(min-width: 0rem){
+
+	.hero-img-txt h1{
+		font-size: 1.8rem;
+	}
+}
+
+@media(min-width: 40rem){
+
+	.hero-img-txt h1{
+		font-size: 2rem;
+	}
+} 
+
+@media(min-width: 64rem){
+
+	.hero-img-txt h1{
+		font-size: 2rem;
+	}
+}
+
+/*** Text ***/
+
+h1,h2,h3,h4,h5,h6,p{
+	color:rgba(0,0,0, 0.87); /* Material Design Color Tipography*/
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	font-weight: 300;
+}
+
+h2{
+	font-weight: 300;
+}
+
+h3{
+	font-weight: 500;
+}
+
+p{
+	font-weight: 400;
+}
+
+.caption{
+	color:rgba(0,0,0, 0.54);
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*** Box ***/
+
+.box{
+	background-color: #FAFAFA;
+	/* border: 1px solid red; */
+	padding: 1rem;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+}
+
+/*** Margins ***/
+
+.margin-bottom{
+	margin-bottom: 1rem;
+}
+
+/** Footer **/
+
+footer{
+	background:;
+	position:relative;
+}
+
+.logos-gobierno {
+    height: 150px;
+    position: relative;
+    margin-bottom: 35px; 
+}
+
+.contenedor-gov-log {
+	padding: 0 .5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.call-to-action-2{
+	z-index: 2;
+	height: 70px;
+	width: 70px;
+	background-image: url('../img/like.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+}
+
+.call-to-action-2:hover{
+	cursor: pointer;
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+}
+
+.contenedor-inferior{
+	position: relative;
+	background-color: #263238; 
+}
+
+/*
+.redes-sociales, .contacto {
+    height: 250px;
+    position: relative 
+}
+*/
+
+/** Tamaño de los contenedores de Redes y Contacto del Footer**/
+
+@media (min-width: 0rem){
+	.redes-sociales, .contacto {
+    	height: 100px;
+    	position: relative 
+	}
+	.redes-sociales{
+		margin-top: 65px;
+	}
+	.contacto{
+		margin-bottom: 45px;
+	}
+}
+
+@media (min-width: 40rem){
+	.redes-sociales, .contacto {
+    	height: 150px;
+    	position: relative 
+	}
+	.redes-sociales{
+		margin-top: 0;
+	}
+	.contacto{
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 64rem){
+	.redes-sociales, .contacto {
+    	height: 200px;
+    	position: relative 
+	}
+	.redes-sociales{
+		margin-top: 0;
+	}
+	.contacto{
+		margin-bottom: 0;
+	}
+}
+
+.contenedor-redes, .contenedor-contacto {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.facebook, .twitter, .youtube{
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	/* background-color: #E91E63; */
+	transition: 0.3s;
+}
+
+.facebook:hover, .twitter:hover, .youtube:hover{
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+}
+
+.facebook{
+	background-image: url('../img/facebook.svg');
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter{
+	margin: 0 1rem;
+	background-image: url('../img/twitter.svg');
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube{
+	background-image: url('../img/youtube.svg');
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacto-footer{
+	text-decoration: none;
+	color:#FFFFFF;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+/** Disabled href tag**/
+
+.disabled {
+	background-color: #01579B;
+   	pointer-events: none;
+   	cursor: default;
+}
+ /** Resaltar Texto **/
+
+ .resaltar{
+ 	color: rgba(233, 30, 99, 0.87);
+ }
+
+/** Autoridades Fotos Redondas **/
+
+.autoridades, .numeros, .profesionales, .comunicacion{
+	z-index: 2;
+	height: 70px;
+	width: 70px;
+	background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.87);
+}
+
+#cristina{
+	background-image: url('../img/cristina.jpg');
+}
+
+#jure{
+	background-image: url('../img/jure.jpg');
+}
+
+#nadalich{
+	background-image: url('../img/nadalich.jpg');
+}
+
+#ocana{
+	background-image: url('../img/ocaña.jpg');
+}
+
+#virgolini{
+	background-image: url('../img/virgolini.jpg');
+}
+
+.box-autoridades, .box-no-fumar, .box-profesionales, .box-comunicacion{
+	margin-top: 3rem;
+	position: relative;
+	text-align: center;
+	background-color: #FAFAFA;
+	/* border: 1px solid red; */
+	padding: 1rem;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+}
+
+.box-no-fumar, .descripcion-profesionales, .descripcion-comunicacion{
+	text-align: left !important;
+}
+
+.nombre-autoridad, .no-fumar-pasos, .descripcion-profesionales, .descripcion-comunicacion{
+	margin-top: 3rem;
+}
+
+/** Dejar de fumar**/
+
+#uno{
+	background-image: url('../img/uno.svg');
+}
+
+#dos{
+	background-image: url('../img/dos.svg');
+}
+
+#tres{
+	background-image: url('../img/tres.svg');
+}
+
+#cuatro{
+	background-image: url('../img/cuatro.svg');
+}
+
+#cinco{
+	background-image: url('../img/cinco.svg');
+}
+
+#seis{
+	background-image: url('../img/seis.svg');
+}
+
+#siete{
+	background-image: url('../img/siete.svg');
+}
+
+#ocho{
+	background-image: url('../img/ocho.svg');
+}
+
+/** Profesionales **/
+
+.profesionales, .comunicacion{
+	background-image: url('../img/download.svg');
+	transition: 0.3s;
+}
+
+.profesionales:hover, .comunicacion:hover{
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+}
+
+/** Estilos formulario **/
+
+form{
+	font-size: .8rem;
+	font-weight: 300;
+}
+
+form input, form textarea{
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: .5rem;
+}
+
+.boton-form{
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: .8rem;
+	display: block;
+	border:none;
+	color:#FFFFFF;
+	background-color: #0091EA;
+	transition: 0.3s;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+	box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.87);
+}
+
+.boton-form:hover{
+	-webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+	box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.87);
+}
+
+.small-text{
+	font-size: .8rem;
+}
+
+
+
+
+
+
+
+
