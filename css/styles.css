@@ -109,6 +109,16 @@ nav{
 
 /** Nav Responsive **/
 
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
 ul.topnav {
 	position: fixed;
     top: 0;
