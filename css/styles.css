@@ -110,17 +110,17 @@ nav{
 /** Nav Responsive **/
 
 /** Este pedazo lo hace agrega el navegador y genera una margen entre los botones **/
-/* 
+
 ul, menu, dir {
     display: block;
     list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
+    -webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    -webkit-padding-start: 0px !important;
 }
-*/
+
 
 ul.topnav {
 	position: fixed;
