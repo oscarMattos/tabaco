@@ -122,6 +122,8 @@ ul, menu, dir {
 }
 
 
+
+
 ul.topnav {
 	position: fixed;
     top: 0;
@@ -138,6 +140,14 @@ ul.topnav, ul.topnav li ul {
   overflow: hidden;
   background-color: #0091EA;
   font-weight: 300;
+}
+/* Codigo agregado para ver si sobreescribe el user agent de chrome*/
+ul.topnav li ul li, ul.topnav li ul li a {
+	-webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    -webkit-padding-start: 0px !important;
 }
 
 ul.topnav li:nth-child(2) ul {float: right;}
