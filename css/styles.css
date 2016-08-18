@@ -142,12 +142,12 @@ ul.topnav, ul.topnav li ul {
   font-weight: 300;
 }
 /* Codigo agregado para ver si sobreescribe el user agent de chrome*/
-ul.topnav li ul li, ul.topnav li ul li a {
+ul.topnav li ul li{
 	-webkit-margin-before: 0px !important;
-    -webkit-margin-after: 0px !important;
-    -webkit-margin-start: 0px !important;
-    -webkit-margin-end: 0px !important;
-    -webkit-padding-start: 0px !important;
+	 -webkit-margin-after: 0px !important;
+    	-webkit-margin-start: 0px !important;
+    	-webkit-margin-end: 0px !important;
+    	-webkit-padding-start: 0px !important;
 }
 
 ul.topnav li:nth-child(2) ul {float: right;}
