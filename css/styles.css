@@ -111,17 +111,17 @@ nav{
 
 /** Este pedazo lo hace agrega el navegador y genera una margen entre los botones **/
 
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 0px !important;
-    -webkit-margin-after: 0px !important;
-    -webkit-margin-start: 0px !important;
-    -webkit-margin-end: 0px !important;
-    -webkit-padding-start: 0px !important;
+#menu-right {
+    	display: block;
+    	list-style-type: disc;
+    	-webkit-margin-before: 0px !important;
+    	-webkit-margin-after: 0px !important;
+    	-webkit-margin-start: 0px !important;
+    	-webkit-margin-end: 0px !important;
+    	-webkit-padding-start: 0px !important;
 }
 
-li{
+.menu{
 	-webkit-margin-before: 0px !important;
     	-webkit-margin-after: 0px !important;
     	-webkit-margin-start: 0px !important;
@@ -129,13 +129,6 @@ li{
     	-webkit-padding-start: 0px !important;	
 }
 
-li:before, li:unitarios{
-	-webkit-margin-before: 0px !important;
-    	-webkit-margin-after: 0px !important;
-    	-webkit-margin-start: 0px !important;
-    	-webkit-margin-end: 0px !important;
-    	-webkit-padding-start: 0px !important;		
-}
 
 
 
