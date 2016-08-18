@@ -111,7 +111,7 @@ nav{
 
 /** Este pedazo lo hace agrega el navegador y genera una margen entre los botones **/
 
-ul, menu, dir {
+ul.topnav,ul, menu, dir {
     display: block;
     list-style-type: disc;
     -webkit-margin-before: 0px !important;
@@ -140,14 +140,6 @@ ul.topnav, ul.topnav li ul {
   overflow: hidden;
   background-color: #0091EA;
   font-weight: 300;
-}
-/* Codigo agregado para ver si sobreescribe el user agent de chrome*/
-ul.topnav li ul li{
-	-webkit-margin-before: 0px !important;
-	 -webkit-margin-after: 0px !important;
-    	-webkit-margin-start: 0px !important;
-    	-webkit-margin-end: 0px !important;
-    	-webkit-padding-start: 0px !important;
 }
 
 ul.topnav li:nth-child(2) ul {float: right;}
