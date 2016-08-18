@@ -111,7 +111,7 @@ nav{
 
 /** Este pedazo lo hace agrega el navegador y genera una margen entre los botones **/
 
-ul.topnav,ul, menu, dir {
+ul, menu, dir {
     display: block;
     list-style-type: disc;
     -webkit-margin-before: 0px !important;
@@ -120,6 +120,15 @@ ul.topnav,ul, menu, dir {
     -webkit-margin-end: 0px !important;
     -webkit-padding-start: 0px !important;
 }
+
+li{
+	-webkit-margin-before: 0px !important;
+    	-webkit-margin-after: 0px !important;
+    	-webkit-margin-start: 0px !important;
+    	-webkit-margin-end: 0px !important;
+    	-webkit-padding-start: 0px !important;	
+}
+
 
 
 
