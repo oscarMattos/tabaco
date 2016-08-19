@@ -115,6 +115,14 @@ ul#menu-right, ul#menu-right > li{
     padding:0;
     margin:0;
 }
+ul#menu-right:before, ul#menu-right:after{
+    padding:0;
+    margin:0;	
+}
+ul#menu-right > li:before, ul#menu-right > li:after{
+    padding:0;
+    margin:0;	
+}
 
 
 ul.topnav {
