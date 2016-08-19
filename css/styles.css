@@ -111,39 +111,10 @@ nav{
 
 /** Este pedazo lo hace agrega el navegador y genera una margen entre los botones **/
 
-#menu-right {
-    	display: block;
-    	list-style-type: none;
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	padding-left: 0 !important;
-    	-webkit-margin-before: 0 !important;
-    	-webkit-margin-after: 0 !important;
-    	-webkit-margin-start: 0 !important;
-    	-webkit-margin-end: 0 !important;
-    	-webkit-padding-start: 0 !important;
+ul#menu-right, ul#menu-right > li.menu{
+    padding:0;
+    margin:0;
 }
-
-.menu{
-	display: inherit;
-	list-style-type: none;
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	padding-left: 0 !important;
-	-webkit-margin-before: 0 !important;
-    	-webkit-margin-after: 0 !important;
-    	-webkit-margin-start: 0 !important;
-    	-webkit-margin-end: 0 !important;
-    	-webkit-padding-start: 0 !important;
-}
-
-
-
-
 
 
 ul.topnav {
