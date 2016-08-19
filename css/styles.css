@@ -134,7 +134,7 @@ ul.topnav {
 	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.87);
 }
 
-ul.topnav, ul.topnav li ul {
+ul.topnav, ul.topnav > li > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -143,11 +143,11 @@ ul.topnav, ul.topnav li ul {
   font-weight: 300;
 }
 
-ul.topnav li:nth-child(2) ul {float: right;}
+ul.topnav > li:nth-child(2) > ul {float: right;}
 
-ul.topnav li:nth-child(2) ul li {display: inline;}
+ul.topnav > li:nth-child(2) > ul > li {display: inline;}
 
-ul.topnav li:first-child{
+ul.topnav > li:first-child{
   float: left;
 }
 
